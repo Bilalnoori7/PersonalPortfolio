@@ -6,4 +6,5 @@ import tailwindcss from "@tailwindcss/vite";
 export default defineConfig({
   plugins: [react(), tailwindcss()],
   base: "/pedrotech-portfolio",
+  assetsInclude: ['**/*.glb'] // Add this line to handle GLB files
 });
