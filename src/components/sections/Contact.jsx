@@ -29,6 +29,10 @@ export const Contact = () => {
         e.preventDefault();
         setIsLoading(true);
         setCurrentAnimation("hit");
+
+            setTimeout(() => {
+        setCurrentAnimation("idle");
+    }, 5000);
         
         emailjs.send(
             import.meta.env.VITE_APP_EMAILJS_SERVICE_ID,
@@ -61,8 +65,10 @@ export const Contact = () => {
     
     return (
         <section className="relative flex lg:flex-row flex-col max-container">
-            <div className="flex-1 min-w-[50%] flex flex-col">
+            <div className="w-full flex justify-center mb-8 lg:absolute lg:top-0 lg:left-0 lg:right-0 lg:z-10">
                 <h1 className="head-text">Get in Touch</h1>
+            </div>
+            <div id="contact" className="flex-1 min-w-[50%] flex flex-col lg:mt-16">
                 <form 
                     ref={formRef}  // Added missing ref
                     className="w-full flex flex-col gap-7 mt-14" 
@@ -135,7 +141,7 @@ export const Contact = () => {
                     </button>
                 </form>
             </div>
-      <div className='lg:w-1/2 w-full lg:h-auto md:h-[550px] h-[350px]'>
+      <div className='lg:w-1/2 w-full lg:h-auto md:h-[550px] h-[350px] lg:mt-16'>
         <Canvas
           camera={{
             position: [0, 0, 5],
@@ -154,7 +160,7 @@ export const Contact = () => {
             intensity={2}
           />
 
-          <Suspense fallback={<Loader />}>
+          <Suspense fallback={null}>
             <Fox
               currentAnimation={currentAnimation}
               position={[0.5, 0.35, 0]}
@@ -167,4 +173,3 @@ export const Contact = () => {
         </section>
     );
 };
-

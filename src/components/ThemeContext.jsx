@@ -180,8 +180,7 @@ export const ThemeProvider = ({ children }) => {
       const leftColor = theme.leftColor.startsWith('#') ? theme.leftColor : `#${theme.leftColor}`;
       const rightColor = theme.rightColor.startsWith('#') ? theme.rightColor : `#${theme.rightColor}`;
       
-    
-      
+
       
       // Check if background is dark to determine appropriate text color
       const isDark = isColorDark(leftColor);

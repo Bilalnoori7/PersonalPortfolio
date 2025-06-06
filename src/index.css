@@ -57,7 +57,12 @@ body {
   opacity: 1;
   transform: translateY(0);
 }
-
+/* 
+@layer utilities {
+  .max-container {
+    @apply max-w-5xl mx-auto sm:p-16 pb-12 !pt-[126px] px-8 min-h-[calc(100vh-80px)];
+  }
+} */
 
 .glassmorphism {
   background: rgba(8, 116, 239, 0.07);
@@ -171,11 +176,27 @@ body {
     0.65vmin 1vmin #d2e4ff, 1vmin 0.65vmin #d2e4ff;
 }
 
+/* Keep all your timeline styles */
+.vertical-timeline-element-content {
+  background-color: black; /* Use any color value - hex, rgb, etc. */
+}
+
+
 
 .vertical-timeline::before {
   background: #CBD5E1; /* or rgb(128, 0, 255) or any color you want */
 }
 
+/* Add this to your global CSS (like index.css) */
+.vertical-timeline-element-content {
+  background-color: var(--timeline-bg, #000) !important;
+  border: 1px solid var(--timeline-border, #333) !important;
+  box-shadow: none !important;
+}
+
+.vertical-timeline-element-content-arrow {
+  border-right: 7px solid var(--timeline-border, #333) !important;
+}
 
 
 /* Container styling */

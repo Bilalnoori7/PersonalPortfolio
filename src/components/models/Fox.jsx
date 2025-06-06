@@ -65,4 +65,4 @@ export const Fox = ({ currentAnimation, ...props }) => {
   )
 }
 
-useGLTF.preload(scene)
+useGLTF.preload(scene);
