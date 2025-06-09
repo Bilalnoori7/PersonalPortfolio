@@ -86,7 +86,7 @@ export const LoadingScreen = ({ onComplete }) => {
         Initializing...
       </div>
 
-      <style jsx>{`
+      <style>{`
         @keyframes loading-slide {
           0% { transform: translateX(-100%); }
           50% { transform: translateX(200%); }
