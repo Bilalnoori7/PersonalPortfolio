@@ -5,12 +5,21 @@ export const LoadingScreen = ({ onComplete }) => {
   const [showCursor, setShowCursor] = useState(true);
   const fullText = "<Hello World />";
 
-  // Disable scrolling when component mounts
   useEffect(() => {
+    // Prevent scrolling on multiple levels
     document.body.style.overflow = 'hidden';
+    document.documentElement.style.overflow = 'hidden';
+    
+    // Prevent touch scrolling on mobile
+    const preventDefault = (e) => e.preventDefault();
+    document.addEventListener('touchmove', preventDefault, { passive: false });
+    document.addEventListener('wheel', preventDefault, { passive: false });
     
     return () => {
       document.body.style.overflow = 'unset';
+      document.documentElement.style.overflow = 'unset';
+      document.removeEventListener('touchmove', preventDefault);
+      document.removeEventListener('wheel', preventDefault);
     };
   }, []);
 
