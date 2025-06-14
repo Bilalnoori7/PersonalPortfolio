@@ -3,9 +3,10 @@ import { useTheme } from './ThemeContext';
 
 export const ThemeSwitcher = () => {
   const themes = [
-    { name: 'Default', leftColor: 'bg-[#111111]', rightColor: 'bg-white' },
-    { name: 'Blue-White', leftColor: 'bg-[#FFFCF4]', rightColor: 'bg-[#111111]' },
-    { name: 'Purple-White', leftColor: 'bg-[#FFFCF4]', rightColor: 'bg-[#749335]' },
+    { name: 'Default', leftColor: 'bg-[#FFFCF4]', rightColor: 'bg-[#749335]' },
+    { name: 'Dark Mode', leftColor: 'bg-[#111111]', rightColor: 'bg-white' },
+    { name: 'Light Mode', leftColor: 'bg-[#FFFCF4]', rightColor: 'bg-[#111111]' },
+
   ];
 
   const [isOpen, setIsOpen] = useState(false);
@@ -116,7 +117,7 @@ export const ThemeSwitcher = () => {
             {/* The preview always uses inline styles, so it works independently of the global theme */}
             <div className="flex flex-col rounded-lg overflow-hidden mx-auto border border-gray-600">
               <div style={{backgroundColor: customLeftColor, padding: "10px"}} className="w-full">
-                <p style={{color: customRightColor}} className="text-center font-bold">
+                <p style={{color: customRightColor}}  className="text-center font-bold">
                   Sample Text
                 </p>
               </div>

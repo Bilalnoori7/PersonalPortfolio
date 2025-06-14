@@ -102,13 +102,12 @@ export const Projects = () => {
               transition-all
             `}
             >
-              <h3 className={`text-xl font-bold mb-2 ${currentTheme.textColor}`}>E-Commerce Web App</h3>
+              <h3 className={`text-xl font-bold mb-2 ${currentTheme.textColor}`} >Data Warehouse & Analytics</h3>
               <p className={`${currentTheme.textColor} mb-4`}>
-                Full-stack e-commerce with modern UI, secure payment
-                integration, and customizable product inventory.
+                Comprehensive data warehousing solution implementing Bronze-Silver-Gold architecture with ETL pipelines, data modeling, and SQL-based analytics for actionable business insights.
               </p>
-              <div className="flex flex-wrap gap-2 mb-4">
-                {["Next.js", "TypeScript", "Stripe", "PostgreSQL"].map(
+              <div className="flex flex-wrap gap-2 mb-4 font-bold">
+                {["SQL Server", "ETL Pipelines", "Star Schema", "Data Modeling", "Analytics"].map(
                   (tech) => (
                     <span
                       key={tech}
@@ -124,7 +123,9 @@ export const Projects = () => {
               </div>
               <div className="flex justify-between items-center">
                 <a
-                  href="#"
+                  href="https://github.com/Bilalnoori7/sql-data-warehouse-project/tree/main"
+                    target="_blank"
+                    rel="noopener noreferrer"
                   className="text-blue-400 hover:text-blue-300 transition-colors my-4"
                 >
                   View Project →

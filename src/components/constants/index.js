@@ -122,7 +122,7 @@ export const experiences = [
         ]
     },
     {
-        title: "Technical Interview Prep 101 - Tech Fellow",
+        title: "Technical Interview Prep 102 - Tech Fellow",
         company_name: "CodePath",
         icon: codepath,
         iconBg: "#f8f8ff",
@@ -143,8 +143,9 @@ export const experiences = [
                 title: "Admin",
                 date: "Jan 2025 - Present",
                 points: [
-                    "Led K-12 outreach initiatives for over 20 students through Technovation and Girls Who Code programs, fostering STEM interest among historically underrepresented middle and high school students",
-                    "Coordinated with curriculum lead to develop learning plans that enabled all students to successfully complete their final tech projects"
+    ,
+                    " Coordinated with curriculum lead to develop learning plans that enabled all students to successfully complete their final tech projects",
+                    " Monitored student progress and identified at-risk learners, implementing targeted intervention strategies",
                 ]
             },
             {
@@ -161,8 +162,8 @@ export const experiences = [
                 title: "Mentor",
                 date: "Sep 2023 - Sep 2024",
                 points: [
-                    "Guided a cohort of 15 students through programming fundamentals and career development.",
-                    "Instructed students in coding languages such as Python, HTML, CSS, JavaScript resulting in increased interest in engineering careers among participants.",
+                    " Instructed students in coding languages such as Python, HTML, CSS, JavaScript resulting in increased interest in engineering careers among participants",
+                    "Guided 45 students through programming fundamentals and career development across Technovation (15 students) and Ghana international programs (30 students)",
                 ]
             }
         ]
@@ -175,9 +176,8 @@ export const experiences = [
         iconBg: "#f8f8ff",
         date: "June 2023 - Present",
         points: [
-            "Mentored over 500+ underrepresented students to ultimately expand their access to computer science education",  
-            "Managed and mentored 4-5 cohorts of 4-6 students each, providing guidance on fundamental data structures and algorithms concepts and problem-solving techniques.",
-            "Collaborated with the course instructor to enhance the quality and interactivity of course materials, ensuring an engaging learning experience for participants."
+            " Provided personal and academic support to 12 diverse college students, achieving 95% positive academic standing and 92% retention rate",  
+            " Conduct bi-weekly meetings, both in-person and via Zoom, to track and assess students’ academic progress, with a focus on achieving a 95% positive academic standing and a 92% retention",
         ]
     },
     {
@@ -190,17 +190,17 @@ export const experiences = [
                 title: "Automation Software Engineer",
                 date: "July 2024 - Aug 2024",
                 points: [
-                    "Engineered a data pipeline by developing a Python script to automate data extraction from UiPath Orchestrator via REST API calls, efficiently retrieving bucket data for various automations.",
-                    "Integrated and managed processed data in DBeaver using SQL, ensuring seamless data management and accessibility.",
-                    "Built a fully automated PowerBI dashboard, delivering real-time insights and reducing manual processing by 75%."
+                    " Engineered Python script with REST APIs to extract UiPath Orchestrator data, reducing collection time by 75% while processing 200+ daily records",
+                    " Built PowerBI dashboard providing real-time insights for executives, eliminating 85% of manual processing and saving 20 hours weekly",
+                    " Integrated and managed processed data in DBeaver using SQL, ensuring seamless data management and accessibility.",
                 ]
             },
             {
                 title: "Project Manager (Salesforce Team):",
                 date: "May 2024 - June 2024",
                 points: [
-                    "Managed project timelines, coordinated team efforts, and led stand-ups, contributing to the successful delivery of key projects.",
-                    "Conducted retrospective meetings to evaluate project performance and implemented process improvements."
+                    " Managed project timelines, coordinated team efforts, and led stand-ups, contributing to the successful delivery of key projects.",
+                    " Conducted retrospective meetings to evaluate project performance and implemented process improvements."
 
                 ]
             },
@@ -216,16 +216,17 @@ export const experiences = [
                 title: "Assistant Program Director",
                 date: "June 2023 - Aug 2024",
                 points: [
-                    "Directed initiatives preparing underrepresented high school students for college through academic enrichment, admissions counseling, and financial aid workshops, enhancing college readiness.",
-                    "Managed administrative tasks, such as scheduling, budgeting, and record keeping, to ensure efficient program operation and maintain a 70% student participation in weekly academic sessions."
+                    " Managed scheduling, budgeting, and records to maintain 70% student participation in weekly academic sessions",
+                    " Led cross-functional team of 8 staff members through mentoring and evaluations to improve teaching effectiveness",
+                    " Directed college prep initiatives for underrepresented students through academic enrichment and admissions counseling",
                 ]
             },
             {
                 title: "Teaching Assistant",
                 date: "June 2022 - June 2023",
                 points: [
-                    "Provided academic support to students in various subjects, including math, science, English, and history.",
-                    "Assisted instructors with classroom instruction and curriculum development, helping to ensure that students were receiving high-quality education and mentorship."
+                    " Mentored 40+ students across Math, Science, English, and History, achieving 83% college admission rate among seniors",
+                    " Assisted instructors with classroom instruction and curriculum development, helping to ensure that students were receiving high-quality education and mentorship"
 
                 ]
             },

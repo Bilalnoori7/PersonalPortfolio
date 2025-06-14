@@ -12,6 +12,7 @@ import { Contact } from "./components/sections/Contact";
 import { Experience } from "./components/sections/WorkExperience";
 import { Skills } from "./components/sections/Skills";
 import { ThemeSwitcher } from "./components/ThemeSwitcher";
+import { Certificates } from "./components/sections/Certificates";
 
 function App() {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -46,6 +47,7 @@ function AppContent({ isLoaded, menuOpen, setMenuOpen }) {
       <Experience />
       <Projects />
       <Skills />
+      <Certificates/>
       <Contact />
     </div>
   );

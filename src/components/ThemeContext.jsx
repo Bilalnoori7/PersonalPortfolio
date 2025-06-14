@@ -12,17 +12,20 @@ export const useTheme = () => {
   return context;
 };
 
+
+
 export const ThemeProvider = ({ children }) => {
   const [currentTheme, setCurrentTheme] = useState({
     name: 'Default',
-    leftColor: 'bg-[#111111]',
-    rightColor: 'bg-white',
-    textColor: 'text-white',
-    bgColor: 'bg-[#111111]',
-    borderColor: 'border-white/30',
+    leftColor: '#FFFCF4',
+    rightColor: '#749335',
+    textColor: '#749335',
+    bgColor: '#FFFCF4',
+    borderColor: '#111111',
+    // borderColor: 'border-white/30',
     // Timeline styles
     timelineBoxBackground: '#111111',
-    timelineBoxBorder: 'rgb(51, 51, 51)',
+    timelineBoxBorder: '#111111',
     // Custom theme flag
     isCustom: false,
     // Custom color values for inline styles
@@ -141,25 +144,30 @@ export const ThemeProvider = ({ children }) => {
       
       // Extract colors from theme names
       switch(theme.name) {
-        case 'Default':
-          bgColor = '#111111';
-          textColor = '#FFFFFF';
-          break;
-        case 'Blue-White':
-          bgColor = '#FFFCF4';
-          textColor = '#111111';
-          break;
-        case 'Purple-White':
+          case 'Default':
           bgColor = '#FFFCF4';
           textColor = '#749335';
           break;
+        case 'Light Mode':
+          bgColor = '#FFFCF4';
+          textColor = '#111111';
+          break;
+
+      case 'Dark Mode':
+          bgColor = '#111111';
+          textColor = '#FFFFFF';
+          break;
+        // case 'Purple-White':
+        //   bgColor = '#FFFCF4';
+        //   textColor = '#749335';
+        //   break;
         case 'Green-White':
           bgColor = 'rgb(22, 163, 74)'; // Green-600
           textColor = '#FFFFFF';
           break;
         default:
-          bgColor = '#111111';
-          textColor = '#FFFFFF';
+          bgColor = '#FFFCF4';
+          textColor = '#749335';
       }
       
       document.documentElement.style.setProperty('--primary-bg', bgColor);
@@ -208,18 +216,20 @@ export const ThemeProvider = ({ children }) => {
       // For predefined themes, use the existing logic
       completeTheme = {
         ...theme,
-        textColor: theme.name === 'Default' ? 'text-white' : 
-                  theme.name === 'Blue-White' ? 'text-gray-900' :
-                  theme.name === 'Purple-White' ? 'text-[#6B941E]' :
+        textColor:theme.name === 'Default' ? 'text-[#6B941E]' :
+                  theme.name === 'Light Mode' ? 'text-gray-900' :
+                  theme.name === 'Dark Mode' ? 'text-white' :
                   theme.name === 'Green-White' ? 'text-green-50' : 'text-black',
         bgColor: theme.leftColor,
-        borderColor: theme.name === 'Default' ? 'border-white/30' : `${theme.rightColor.replace('bg-', 'border-')}/30`,
-        timelineBoxBackground: theme.name === 'Default' ? '#111111' : 
-                              theme.name === 'Blue-White' ? '#FFFCF4' :
-                              theme.name === 'Purple-White' ? '#FFFCF4' :
-                              theme.name === 'Green-White' ? 'rgb(21, 128, 61)' : 'rgb(0, 0, 0)',
-        timelineBoxBorder: theme.name === 'Default' ? 'rgb(255, 255, 255)' : 
-                          theme.name === 'Blue-White' ? '#111111' :
+        borderColor: theme.name === 'Default' ? '#FFFCF4' : `${theme.rightColor.replace('bg-', 'border-')}/30`,
+        timelineBoxBackground: theme.name === 'Default' ? '#FFFCF4':
+                              // theme.name === 'Default' ? '#111111' : 
+                              theme.name === 'Light Mode' ? '#FFFCF4' :
+                              theme.name === 'Dark Mode' ? '#111111' : 'rgb(0, 0, 0)',
+                              // theme.name === 'Green-White' ? 'rgb(21, 128, 61)' : 'rgb(0, 0, 0)',
+        timelineBoxBorder: theme.name === 'Default' ? '#111111':
+                          theme.name ==='Dark Mode' ? 'rgb(255, 255, 255)' : 
+                          theme.name === 'Light Mode' ? '#111111' :
                           theme.name === 'Purple-White' ? '#111111' :
                           theme.name === 'Green-White' ? 'rgb(22, 101, 52)' : 'rgb(51, 51, 51)',
         isCustom: false,

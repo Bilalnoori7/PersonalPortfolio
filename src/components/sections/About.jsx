@@ -37,8 +37,12 @@ export const About = () => {
               className={`${!currentTheme.isCustom ? currentTheme.textColor : ''} mb-6`}
               style={textStyle}
             >
-              Passionate developer with expertise in building scalable web
-              applications and creating innovative solutions.
+              Data engineer: I wrangle data like a cowboy, but with more Python and fewer horses. Specializing in ETL pipelines, data infrastructure, and turning chaotic datasets into business gold using SQL, Python, and whatever tool gets the job done.
+              <br /><br />
+              With nearly a year combined of professional experience at AAA Life Insurance building automated data solutions and dashboards, and currently at Textron Inc working on data migration projects from legacy systems to modern platforms.
+               I also bring 3+ years of leadership experience managing teams and mentoring underrepresented K-12 students and first-generation college students.
+               <br /><br />
+            After 3 brain operations for a tumor, I figured if surgeons can debug my head, I can definitely debug your databases.
             </p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
