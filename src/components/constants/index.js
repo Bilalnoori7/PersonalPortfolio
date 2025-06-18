@@ -116,9 +116,8 @@ export const experiences = [
         iconBg: "#f8f8ff",
         date: "June 2025 - Present",
         points: [
-            "Coming Soon",  
-            "Coming Soon",
-            "Coming Soon"
+            "Migrating enterprise data workflows from Azure Synapse to Databricks, modernizing data architecture for critical business operations",  
+            "Implemented data governance frameworks in Databricks environment, establishing data lineage tracking and quality monitoring",
         ]
     },
     {
@@ -128,9 +127,8 @@ export const experiences = [
         iconBg: "#f8f8ff",
         date: "Jan 2025 - Present",
         points: [
-            "Mentored over 500+ underrepresented students to ultimately expand their access to computer science education",  
-            "Taught data structures, algorithms, and problem-solving techniques to 20-30 students across 5 cohorts, resulting in an 85% average improvement on technical assessments",
-            "Collaborated with CodePath leadership to refine course structure, enhancing learning experience for the next cohort of 900+ students"
+            "Taught data structures and algorithms to 20-30 underrepresented students across 5 cohorts, achieving 85% average improvement on technical assessments",
+            "Collaborated with leadership to refine course structure, impacting 900+ summer 2025 cohort students"
         ]
     },
     {
@@ -177,7 +175,7 @@ export const experiences = [
         date: "June 2023 - Present",
         points: [
             " Provided personal and academic support to 12 diverse college students, achieving 95% positive academic standing and 92% retention rate",  
-            " Conduct bi-weekly meetings, both in-person and via Zoom, to track and assess students’ academic progress, with a focus on achieving a 95% positive academic standing and a 92% retention",
+            " Conducted bi-weekly meetings, both in-person and via Zoom, to track and assess students’ academic progress, with a focus on achieving a 95% positive academic standing and a 92% retention",
         ]
     },
     {
@@ -200,8 +198,7 @@ export const experiences = [
                 date: "May 2024 - June 2024",
                 points: [
                     " Managed project timelines, coordinated team efforts, and led stand-ups, contributing to the successful delivery of key projects.",
-                    " Conducted retrospective meetings to evaluate project performance and implemented process improvements."
-
+                    " Led daily stand-ups, sprint planning, and retrospectives resulting in reduced call selector slowness by 75% on the Salesforce platform and boosted task completion rates through agile process improvements"
                 ]
             },
         ]
@@ -226,7 +223,7 @@ export const experiences = [
                 date: "June 2022 - June 2023",
                 points: [
                     " Mentored 40+ students across Math, Science, English, and History, achieving 83% college admission rate among seniors",
-                    " Assisted instructors with classroom instruction and curriculum development, helping to ensure that students were receiving high-quality education and mentorship"
+                    " Collaborated with instructors on classroom instruction and curriculum development to deliver high-quality education and mentorship to students"
 
                 ]
             },

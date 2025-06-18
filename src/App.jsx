@@ -47,7 +47,7 @@ function AppContent({ isLoaded, menuOpen, setMenuOpen }) {
       <Experience />
       <Projects />
       <Skills />
-      <Certificates/>
+      <Certificates />
       <Contact />
     </div>
   );
