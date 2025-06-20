@@ -71,15 +71,15 @@ export const Experience = () => {
                       />
                     </div>
                   }
-                  contentStyle={{
-                    background: "linear-gradient(135deg, rgba(20, 20, 20, 0.95) 0%, rgba(30, 30, 30, 0.95) 100%)",
-                    borderRadius: "16px",
-                    border: `1px solid rgba(255, 255, 255, 0.1)`,
-                    borderLeft: `4px solid ${experience.iconBg}`,
-                    boxShadow: "0 8px 32px rgba(0, 0, 0, 0.3)",
-                    backdropFilter: "blur(10px)",
-                    padding: "2rem"
-                  }}
+ contentStyle={{
+  background: "transparent", // Changed from the dark gradient
+  borderRadius: "16px",
+  border: `1px solid rgba(255, 255, 255, 0.1)`,
+  borderLeft: `4px solid ${experience.iconBg}`,
+  boxShadow: "0 8px 32px rgba(0, 0, 0, 0.3)",
+  backdropFilter: "blur(10px)",
+  padding: "2rem"
+}}
                   contentArrowStyle={{ 
                     borderRight: `7px solid rgba(255, 255, 255, 0.1)` 
                   }}
