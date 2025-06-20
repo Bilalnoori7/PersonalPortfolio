@@ -26,6 +26,15 @@ import arrow from './arrow.svg'
 import contact from './contact.svg'
 import soundon from './soundon.png'
 import soundoff from './soundoff.png'
+import azure from './azure.png'
+import db from './db.svg'
+import dbeaver from './dbeaver.svg'
+import apache from './apache.svg'
+import c from './C++.svg'
+import py from './Python.svg'
+import mss from './MSS.svg'
+
+
 
 export {
     css,
@@ -55,5 +64,13 @@ export {
     arrow,
     contact,
     soundon,
-    soundoff
+    soundoff,
+    azure,
+    db,
+    dbeaver,
+    apache,
+    c,
+    mss,
+    py
+
 }

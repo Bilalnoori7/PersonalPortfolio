@@ -29,8 +29,11 @@ export const Skills = () => {
         <div className="max-w-6xl mx-auto px-4 mt-12">
           <div className="text-center mb-12">
             <h3 className={`text-5xl font-bold mb-4 ${currentTheme.textColor} font-sans`}>
-              Skills
+              Technical Tools
             </h3>
+            <p className={`text-lg opacity-80 ${currentTheme.textColor} max-w-2xl mx-auto`}>
+           Technical skills built through exploration, experimentation, and hands-on problem solving
+          </p>
           </div>
           
           {hasCategories ? (
@@ -128,12 +131,13 @@ const SkillCard = ({ skill, index, currentTheme, hoveredSkill, setHoveredSkill }
         </div>
       </div>
       
-      {/* Skill name with enhanced styling */}
+      {/* Skill name with enhanced styling and better text wrapping */}
       <div className="mt-3 text-center">
         <p className={`
           text-sm font-medium transition-all duration-300
           ${currentTheme.textColor}
           ${isHovered ? 'text-white font-semibold scale-105' : ''}
+          break-words text-center leading-tight max-w-[80px] mx-auto
         `}>
           {skill.name}
         </p>

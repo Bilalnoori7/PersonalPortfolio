@@ -29,30 +29,29 @@ export const Projects = () => {
       featured: true,
       category: "AI/ML",
       impact: "90% reduction in document retrieval time",
-
       award: "🏆 Microsoft x AAA Hackathon Winner"
     },
     {
       id: 3,
       title: "City-Builder",
-      description: " Implemented clean object-oriented programming architecture by applying iterator and visitor design patterns, enabling efficient city component traversal and operations in C++ with wxWidgets.",
-      technologies: ["Socket.IO", "Express", "React", "Redis"],
-      githubUrl: "#",
+      description: "Implemented clean object-oriented programming architecture by applying iterator and visitor design patterns, enabling efficient city component traversal and operations in C++ with wxWidgets.",
+      technologies: ["C++", "wxWidgets", "OOP", "Design Patterns"],
+      githubUrl: "https://github.com/Bilalnoori7/city-builder",
       liveUrl: "#",
+      videoUrl: "/PersonalPortfolio/demo/city.mp4",
       featured: false,
-      category: "Full Stack",
-      impact: "Demonstrates advanced programming concepts beyond basic coding",
+      category: "Desktop Application",
+      impact: "Demonstrates advanced programming concepts beyond basic coding"
     },
     {
       id: 4,
       title: "PAWS & LAWS: Advocating for XL Bullies",
       description: "Built an advocacy website for XL Bullies as a 10-week CodePath capstone project, creating a responsive interface to educate the public—selected as best in cohort and presented to leadership.",
       technologies: ["HTML", "CSS", "JavaScript", "Wireframing", "Replit"],
-      githubUrl: "#",
-      liveUrl: "https://b-noori-advocacy-project-nooribil.replit.app/",
       featured: false,
-      category: "Full Stack",
-      impact: "My first ever website, selected as the best capstone project in my CodePath cohort.",
+      category: "Web Development",
+      impact: "My first ever website, selected as the best capstone project in my CodePath cohort",
+      githubUrl: "https://b-noori-advocacy-project-nooribil.replit.app/"
     }
   ];
 
@@ -66,10 +65,13 @@ export const Projects = () => {
       <RevealOnScroll>
         <div className="max-w-5xl mx-auto px-4">
           {/* Header Section */}
-          <h2 className={`text-[40px] font-bold mb-8 ${currentTheme.textColor} text-center font-sans`}>
+          <h3 className={`text-[40px] font-bold  ${currentTheme.textColor} text-center font-sans`}>
             Featured Projects
-          </h2>
-
+          </h3>
+          <p className={`text-lg opacity-80 ${currentTheme.textColor} max-w-2xl mx-auto text-center mb-12`}>
+            A collection of work that showcases my technical skills and problem-solving approach
+          </p>
+          
           {/* Projects Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {projects.map((project, index) => (
@@ -83,8 +85,6 @@ export const Projects = () => {
               />
             ))}
           </div>
-
-
         </div>
       </RevealOnScroll>
     </section>
@@ -100,6 +100,7 @@ const ProjectCard = ({
   setHoveredProject
 }) => {
   const isHovered = hoveredProject === project.id;
+  const [showVideo, setShowVideo] = useState(false);
 
   return (
     <div
@@ -128,6 +129,42 @@ const ProjectCard = ({
             </span>
           )}
         </div>
+
+        {/* Video Demo Section */}
+        {project.videoUrl && (
+          <div className="mb-4">
+            {!showVideo ? (
+              <button
+                onClick={() => setShowVideo(true)}
+                className="flex items-center gap-2 text-blue-400 hover:text-blue-300 transition-colors"
+              >
+                <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M6.3 2.841A1.5 1.5 0 004 4.11V15.89a1.5 1.5 0 002.3 1.269l9.344-5.89a1.5 1.5 0 000-2.538L6.3 2.84z"/>
+                </svg>
+                <span>Watch Video</span>
+              </button>
+            ) : (
+              <div className="relative">
+                <video
+                  controls
+                  autoPlay
+                  className="w-full rounded-lg border border-blue-500/30"
+                  style={{ maxHeight: '300px' }}
+                >
+                  <source src={project.videoUrl} type="video/mp4" />
+                  Your browser does not support the video tag.
+                </video>
+                <button
+                  onClick={() => setShowVideo(false)}
+                  className="absolute top-2 right-2 bg-black/50 hover:bg-black/70 text-white 
+                            rounded-full w-8 h-8 flex items-center justify-center transition-all"
+                >
+                  ×
+                </button>
+              </div>
+            )}
+          </div>
+        )}
 
         {/* Description */}
         <p className={`${currentTheme.textColor} mb-4`}>
@@ -173,16 +210,7 @@ const ProjectCard = ({
               View Project →
             </a>
           )}
-          {project.liveUrl && (
-            <a
-              href={project.liveUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-green-400 hover:text-green-300 transition-colors"
-            >
-              Live Demo →
-            </a>
-          )}
+         
         </div>
       </div>
     </div>

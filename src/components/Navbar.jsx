@@ -49,6 +49,27 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
     setMenuOpen(false);
   }, [setMenuOpen]);
 
+  // Function to determine if background is dark
+  const isDarkBackground = () => {
+    if (currentTheme.isCustom && currentTheme.customLeftColor) {
+      // For custom themes, check the hex color brightness
+      const hex = currentTheme.customLeftColor.replace('#', '');
+      const r = parseInt(hex.substr(0, 2), 16);
+      const g = parseInt(hex.substr(2, 2), 16);
+      const b = parseInt(hex.substr(4, 2), 16);
+      const brightness = ((r * 299) + (g * 587) + (b * 114)) / 1000;
+      return brightness < 128;
+    } else {
+      // For predefined themes
+      return currentTheme.name === 'Dark Mode';
+    }
+  };
+
+  // Get hamburger color based on background
+  const getHamburgerColor = () => {
+    return isDarkBackground() ? 'bg-white' : 'bg-black';
+  };
+
   // Navbar links with their paths
   const navLinks = [
     { title: "Home", path: "#home", section: "home" },
@@ -64,6 +85,8 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
   const navbarBg = isScrolled 
     ? "bg-[rgba(10, 10, 10, 0.95)] backdrop-blur-xl border-b border-white/20 shadow-2xl" 
     : "bg-[rgba(10, 10, 10, 0.8)] backdrop-blur-lg border-b border-white/10 shadow-lg";
+
+  const hamburgerColor = getHamburgerColor();
 
   return (
     <>
@@ -81,14 +104,14 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
             
             {/* Mobile Menu Button */}
             <button
-              className="md:hidden w-8 h-8 flex flex-col justify-center items-center cursor-pointer z-50 focus:outline-none focus:ring-2 focus:ring-white/50 rounded-md p-1"
+              className={`md:hidden w-8 h-8 flex flex-col justify-center items-center cursor-pointer z-50 focus:outline-none focus:ring-2 focus:ring-white/50 rounded-md p-1`}
               onClick={toggleMenu}
               aria-label="Toggle menu"
               aria-expanded={menuOpen}
             >
-              <span className={`w-6 h-0.5 ${currentTheme.textColor} transition-all duration-300 ${menuOpen ? 'rotate-45 translate-y-1.5' : ''}`} />
-              <span className={`w-6 h-0.5 ${currentTheme.textColor} transition-all duration-300 my-1 ${menuOpen ? 'opacity-0' : ''}`} />
-              <span className={`w-6 h-0.5 ${currentTheme.textColor} transition-all duration-300 ${menuOpen ? '-rotate-45 -translate-y-1.5' : ''}`} />
+              <span className={`w-6 h-0.5 ${hamburgerColor} transition-all duration-300 ${menuOpen ? 'rotate-45 translate-y-1.5' : ''}`} />
+              <span className={`w-6 h-0.5 ${hamburgerColor} transition-all duration-300 my-1 ${menuOpen ? 'opacity-0' : ''}`} />
+              <span className={`w-6 h-0.5 ${hamburgerColor} transition-all duration-300 ${menuOpen ? '-rotate-45 -translate-y-1.5' : ''}`} />
             </button>
             
             {/* Desktop Menu */}
@@ -148,7 +171,7 @@ export const Navbar = ({ menuOpen, setMenuOpen }) => {
                     focus:outline-none focus:ring-2 focus:ring-white/50
                     ${isActive 
                       ? `text-amber-600 bg-white/10 border-l-4 border-white/50` 
-                      : `${currentTheme.textColor} hover:bg-white/5 hover:translate-x-2`
+                      : `text-white hover:bg-white/5 hover:translate-x-2`
                     }
                   `}
                   style={{ 

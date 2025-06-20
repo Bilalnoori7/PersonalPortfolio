@@ -3,7 +3,7 @@ import { ThemeProvider, useTheme } from "./components/ThemeContext"; // Make sur
 import "./App.css";
 import { LoadingScreen } from "./components/LoadingScreen";
 import { Navbar } from "./components/Navbar";
-import { MobileMenu } from "./components/MobileMenu";
+// import { MobileMenu } from "./components/MobileMenu";
 import { Home } from "./components/sections/Home";
 import { About } from "./components/sections/About";
 import { Projects } from "./components/sections/Projects";
@@ -37,7 +37,7 @@ function AppContent({ isLoaded, menuOpen, setMenuOpen }) {
       } ${currentTheme.bgColor}`}
     >
       <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
-      <MobileMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+      {/* <MobileMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen} /> */}
       
       {/* Theme switcher visible across all components */}
       <ThemeSwitcher />

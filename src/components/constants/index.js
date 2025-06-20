@@ -23,7 +23,15 @@ import {
     summiz,
     tailwindcss,
     threads,
-    typescript
+    typescript,
+    azure,
+    db,
+    apache,
+    dbeaver,
+    c,
+    py,
+    mss
+
 } from "../../assets/icons";
 
 export const skills = [
@@ -31,11 +39,6 @@ export const skills = [
         imageUrl: css,
         name: "CSS",
         type: "Frontend",
-    },
-    {
-        imageUrl: express,
-        name: "Express",
-        type: "Backend",
     },
     {
         imageUrl: git,
@@ -63,16 +66,6 @@ export const skills = [
         type: "Database",
     },
     {
-        imageUrl: motion,
-        name: "Motion",
-        type: "Animation",
-    },
-    {
-        imageUrl: mui,
-        name: "Material-UI",
-        type: "Frontend",
-    },
-    {
         imageUrl: nextjs,
         name: "Next.js",
         type: "Frontend",
@@ -88,24 +81,53 @@ export const skills = [
         type: "Frontend",
     },
     {
-        imageUrl: redux,
-        name: "Redux",
-        type: "State Management",
-    },
-    {
-        imageUrl: sass,
-        name: "Sass",
-        type: "Frontend",
-    },
-    {
         imageUrl: tailwindcss,
         name: "Tailwind CSS",
         type: "Frontend",
     },
+        {
+        imageUrl: azure,
+        name: "Azure",
+        type: "Cloud",
+    },
     {
-        imageUrl: typescript,
-        name: "TypeScript",
-        type: "Frontend",
+        imageUrl: db,
+        name: "Databricks",
+        type: "Data",
+    },
+    {
+        imageUrl: dbeaver,
+        name: "DBeaver",
+        type: "Data",
+    },
+    {
+
+        imageUrl: apache,
+        name: "Apache Spark",
+        type: "Data"
+
+    },
+    {
+
+        imageUrl: c,
+        name: "C++",
+        type: "Language"
+
+    }
+    ,
+    {
+
+        imageUrl: py,
+        name: "Python",
+        type: "Language"
+
+    },
+    {
+
+        imageUrl: mss,
+        name: "Microsoft Sql Sever",
+        type: "Data"
+
     }
 ];
 export const experiences = [
