@@ -138,7 +138,8 @@ export const experiences = [
         iconBg: "#f8f8ff",
         date: "June 2025 - Present",
         points: [
-            "Executed enterprise-scale migration from Azure Synapse Analytics to Databricks, transitioning from traditional MPP data warehouse to unified lakehouse architecture for enhanced data science and ML capabilities",  ]
+            "Executed enterprise-scale migration from Azure Synapse Analytics to Databricks, transitioning from traditional MPP data warehouse to unified lakehouse architecture for enhanced data science and ML capabilities",
+        "Implemented data governance protocols and security measures during the migration, ensuring 100% compliance with enterprise standards while maintaining zero data loss throughout the transition",  ]
     },
     {
         title: "Technical Interview Prep 102 - Tech Fellow",
