@@ -302,7 +302,7 @@ export const Contact = () => {
                                             }
                                             focus:outline-none focus:ring-2 focus:ring-white/20
                                         `}
-                                        placeholder="Tell me about your project or how I can help you..." 
+                                        placeholder="Describe the opportunity..." 
                                         required 
                                         value={form.message}
                                         onChange={handleChange}
@@ -357,7 +357,7 @@ export const Contact = () => {
                                             </svg>
                                         </div>
                                         <a 
-                                            href="https://linkedin.com/in/your-profile" 
+                                            href="https://www.linkedin.com/in/bilal-noori" 
                                             target="_blank" 
                                             rel="noopener noreferrer"
                                             className={`text-sm text-amber-600 opacity-80 hover:opacity-100 transition-opacity duration-200`}
