@@ -175,7 +175,7 @@ export const Contact = () => {
                         Get in Touch
                     </h1>
                     <p className={`text-lg opacity-80 ${currentTheme.textColor} max-w-2xl mx-auto`}>
-                        Have a project in mind or want to collaborate? I'd love to hear from you!
+                        Interested in discussing career opportunities or connecting about potential roles? I'd love to hear from you!
                     </p>
                 </div>
 
