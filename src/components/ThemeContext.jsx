@@ -24,7 +24,7 @@ export const ThemeProvider = ({ children }) => {
     borderColor: '#111111',
     // borderColor: 'border-white/30',
     // Timeline styles
-    timelineBoxBackground: '#111111',
+    timelineBoxBackground: '#FFFCF4',
     timelineBoxBorder: '#111111',
     // Custom theme flag
     isCustom: false,

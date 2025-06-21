@@ -72,7 +72,6 @@ export const Experience = () => {
                     </div>
                   }
  contentStyle={{
-  background: "transparent", // Changed from the dark gradient
   borderRadius: "16px",
   border: `1px solid rgba(255, 255, 255, 0.1)`,
   borderLeft: `4px solid ${experience.iconBg}`,
