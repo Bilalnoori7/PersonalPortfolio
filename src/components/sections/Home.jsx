@@ -71,7 +71,7 @@ export const Home = () => {
 
               {/* Resume */}
               <a 
-                href="/PersonalPortfolio/resume/Bilal-Noori-Resume.pdf" 
+                href="/PersonalPortfolio/resume/Bilal-Noori_Resume.pdf" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 title="Download my resume"
