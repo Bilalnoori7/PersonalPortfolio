@@ -5,6 +5,6 @@ import tailwindcss from "@tailwindcss/vite";
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react(), tailwindcss()],
-  base: '/PersonalPortfolio/',
+  base: 'https://bilalx.tech/',
   assetsInclude: ['**/*.glb'] // Add this line to handle GLB files
 });
