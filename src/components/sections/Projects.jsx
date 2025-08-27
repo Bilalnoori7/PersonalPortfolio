@@ -38,7 +38,7 @@ export const Projects = () => {
       technologies: ["C++", "wxWidgets", "OOP", "Design Patterns"],
       githubUrl: "https://github.com/Bilalnoori7/city-builder",
       liveUrl: "#",
-      videoUrl: "/PersonalPortfolio/demo/city.mp4",
+      videoUrl: "/demo/city.mp4",
       featured: false,
       category: "Desktop Application",
       impact: "Demonstrates advanced programming concepts beyond basic coding"
