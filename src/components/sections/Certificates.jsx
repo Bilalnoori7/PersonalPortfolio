@@ -13,7 +13,7 @@ export const Certificates = () => {
       title: "Databricks for Data Engineering",
       issuer: "Databricks",
       date: "2025",
-      image: "/PersonalPortfolio/certificates/db_de.png",
+      image: "/certificates/db_de.png",
       description: "Foundational certification for data engineering in Databricks architecture, storage, and pipeline tools",
       category: "Data Engineering",
       color: "amber"
@@ -23,7 +23,7 @@ export const Certificates = () => {
       title: "Tech Fellow Leadership",
       issuer: "CodePath",
       date: "2025",
-      image: "/PersonalPortfolio/certificates/cp_tip.png",
+      image: "/certificates/cp_tip.png",
       description: "Leadership recognition for supporting technical interview preparation programs",
       category: "Leadership",
       color: "purple"
@@ -33,7 +33,7 @@ export const Certificates = () => {
       title: "Web Development",
       issuer: "Amazon Web Services",
       date: "2024",
-      image: "/PersonalPortfolio/certificates/cp-itw.jpg",
+      image: "/certificates/cp-itw.jpg",
       description: "Honor-level certification in web development fundamentals",
       category: "Web Development",
       color: "blue"
@@ -43,7 +43,7 @@ export const Certificates = () => {
       title: "Databricks Fundamentals",
       issuer: "Databricks",
       date: "2024",
-      image: "/PersonalPortfolio/certificates/db_acc.png",
+      image: "/certificates/db_acc.png",
       description: "Foundational certification in Databricks platform overview and core concepts",
       category: "Data Engineering",
       color: "green"
