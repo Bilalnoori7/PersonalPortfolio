@@ -33,6 +33,9 @@ import apache from './apache.svg'
 import c from './C++.svg'
 import py from './Python.svg'
 import mss from './MSS.svg'
+import tab from './tableau.svg'
+import snow from './snow.svg'
+import dock from './docker.svg'
 
 
 
@@ -71,6 +74,9 @@ export {
     apache,
     c,
     mss,
-    py
+    py,
+    tab,
+    snow,
+    dock
 
 }

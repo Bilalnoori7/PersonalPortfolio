@@ -1,29 +1,19 @@
-import { meta, shopify, starbucks, tesla, aaa, R, textron,codepath,girlswhocode, UB} from "../../assets/images";
+import {  aaa, R, textron,codepath,girlswhocode, UB} from "../../assets/images";
 import {
-    car,
-    contact,
+    snow,
     css,
-    estate,
-    express,
+    dock,
     git,
     github,
     html,
     javascript,
-    linkedin,
     mongodb,
-    motion,
-    mui,
     nextjs,
     nodejs,
-    pricewise,
+
     react,
-    redux,
-    sass,
-    snapgram,
-    summiz,
+    tab,
     tailwindcss,
-    threads,
-    typescript,
     azure,
     db,
     apache,
@@ -128,31 +118,31 @@ export const skills = [
         name: "Microsoft Sql Sever",
         type: "Data"
 
+    },
+        {
+
+        imageUrl: dock,
+        name: "Docker",
+        type: "Data"
+
+    },
+        {
+
+        imageUrl: snow,
+        name: "Snowflake",
+        type: "Data"
+
+    },
+        {
+
+        imageUrl: tab,
+        name: "Tableau",
+        type: "Data"
+
     }
 ];
 export const experiences = [
-    {
-        title: "IT Leadership Development Program Intern",
-        company_name: "Textron Inc",
-        icon: textron,
-        iconBg: "#f8f8ff",
-        date: "June 2025 - Present",
-        points: [
-            "Executed enterprise-scale migration from Azure Synapse Analytics to Databricks, transitioning from traditional MPP data warehouse to unified lakehouse architecture for enhanced data science and ML capabilities",
-        "Implemented data governance protocols and security measures during the migration, ensuring 100% compliance with enterprise standards while maintaining zero data loss throughout the transition",  ]
-    },
-    {
-        title: "Technical Interview Prep 102 - Tech Fellow",
-        company_name: "CodePath",
-        icon: codepath,
-        iconBg: "#f8f8ff",
-        date: "Jan 2025 - Present",
-        points: [
-            "Taught data structures and algorithms to 20-30 underrepresented students across 5 cohorts, achieving 85% average improvement on technical assessments",
-            "Collaborated with leadership to refine course structure, impacting 900+ summer 2025 cohort students"
-        ]
-    },
-    {
+        {
         company_name: "Michigan State University - Broadening Participation",
         icon: girlswhocode,
         iconBg: "#f8f8ff",
@@ -186,17 +176,53 @@ export const experiences = [
                 ]
             }
         ]
+    },        {
+        company_name: "Michigan State University - Trio SSS",
+        icon: R,
+        iconBg: "#f8f8ff",
+        date: "June 2023 - Present", // Overall date range for the company
+        roles: [
+            {
+                title: "Program Ambassador",
+                date: "June 2024 - Present",
+                points: [
+    ,
+                    " Organized events to grow the TRIO SSS program serving 500+ scholars and provide support for first-generation and low-income college students",
+                    " Applied mentoring experience to develop programming that promoted student success and retention",
+                ]
+            },
+            {
+                title: "Peer Mentor",
+                date: "June 2023 - June 2024",
+                points: [
+                        "Mentored and supported 12 diverse college students to maximize their college success potential, achieving 95% positive academic standing and 92% retention rate",  
+                        " Conducted bi-weekly meetings, both in-person and via Zoom, to track and assess students’ academic progress, with a focus on achieving a 95% positive academic standing and a 92% retention",
+                    ]
+            },
+            
+
+        ]
     },
 
     {
-        title: "Peer Mentor",
-        company_name: "Trio SSS",
-        icon: R,
+        title: "IT Leadership Development Program Intern",
+        company_name: "Textron Inc",
+        icon: textron,
         iconBg: "#f8f8ff",
-        date: "June 2023 - Present",
+        date: "June 2025 - Aug 2025",
         points: [
-            " Provided personal and academic support to 12 diverse college students, achieving 95% positive academic standing and 92% retention rate",  
-            " Conducted bi-weekly meetings, both in-person and via Zoom, to track and assess students’ academic progress, with a focus on achieving a 95% positive academic standing and a 92% retention",
+            "Executed enterprise-scale migration from Azure Synapse Analytics to Databricks, transitioning from traditional data warehouse to unified lakehouse architecture for enhanced data science and ML capabilities",
+        "Implemented liquid clustering and partition optimization to improve query performance by 70%","Developed automated data validation framework with custom scripts, ensuring data integrity across data pipelines"  ]
+    },
+    {
+        title: "Intermediate Technical Interview Prep- Tech Fellow",
+        company_name: "CodePath",
+        icon: codepath,
+        iconBg: "#f8f8ff",
+        date: "Jan 2025 - April 2025",
+        points: [
+            "Taught data structures and algorithms to 20-30 underrepresented students across 5 cohorts, achieving 85% average improvement on technical assessments",
+            "Collaborated with leadership to refine course structure, impacting 900+ summer 2025 cohort students"
         ]
     },
     {
@@ -211,7 +237,7 @@ export const experiences = [
                 points: [
                     " Engineered Python script with REST APIs to extract UiPath Orchestrator data, reducing collection time by 75% while processing 200+ daily records",
                     " Built PowerBI dashboard providing real-time insights for executives, eliminating 85% of manual processing and saving 20 hours weekly",
-                    " Integrated and managed processed data in DBeaver using SQL, ensuring seamless data management and accessibility.",
+                    " Processed and managed database operations using SQL queries in DBeaver, ensuring seamless data accessibility and workflow efficiency",
                 ]
             },
             {
